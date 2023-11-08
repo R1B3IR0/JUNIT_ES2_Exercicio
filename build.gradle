@@ -2,6 +2,11 @@ plugins {
     id 'java'
 }
 
+group 'JUNIT_ES2_Exercicio'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
 repositories {
     mavenCentral()
 }
@@ -14,6 +19,6 @@ dependencies {
 test {
     useJUnitPlatform()
     testLogging {
-        events "passed", "skipped", "failed"
+        events "passed", "skipped", "failed", "standardOut", "standardError"
     }
 }
